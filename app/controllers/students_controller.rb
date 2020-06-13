@@ -10,6 +10,8 @@ class StudentsController < ApplicationController
   end
   
   def activate
+    student = Student.find_by(id: params[:id])
+  end
 
   private
 
